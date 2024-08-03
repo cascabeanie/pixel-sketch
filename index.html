@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PixelSketch</title>
+    <link
+      rel="shortcut icon"
+      href="images/paintbrush.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="outer-grid">
+      <header>
+        <h1 class="page-title">PixelSketch</h1>
+      </header>
+      <main>
+        <div class="top-button-container">
+          <div class="colour-selector-container">
+            <input class="colour-input" type="color" />
+            <label for="colour-input">Colour</label>
+          </div>
+          <button class="activate-paintbrush">
+            Paint<i class="fa-solid fa-paintbrush"></i>
+          </button>
+          <button class="activate-rgb">
+            RGB<i class="fa-solid fa-rainbow"></i>
+          </button>
+          <button class="activate-eraser">
+            Erase<i class="fa-solid fa-eraser"></i>
+          </button>
+        </div>
+        <div class="grid-canvas-container"></div>
+        <div class="bottom-button-container">
+          <div class="grid-slider-container">
+            <label for="slider-input"
+              >Grid size: <output class="slider-output"></output
+            ></label>
+            <input
+              class="slider-input"
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              step="1"
+            />
+            <button class="update-grid">
+              Update grid<i class="fa-solid fa-arrows-rotate"></i>
+            </button>
+          </div>
+          <div class="gridlines-controls-container">
+            <label class="switch-label" for="gridlines-switch"
+              >Toggle <br />Gridlines:</label
+            >
+            <input
+              class="gridlines-switch"
+              type="checkbox"
+              autocomplete="off"
+            />
+          </div>
+          <button class="activate-clear">
+            Clear<i class="fa-solid fa-trash-can"></i>
+          </button>
+        </div>
+      </main>
+      <footer>
+        <a
+          href="https://github.com/cascabeanie"
+          target="_blank"
+          rel="noopener noreferrer"
+          >cascabeanie <i class="fa-brands fa-github"></i
+        ></a>
+      </footer>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/7d76ae1b65.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
